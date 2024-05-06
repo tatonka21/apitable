@@ -18,6 +18,7 @@
 
 package com.apitable.core.util;
 
+import io.github.pixee.security.BoundedLineReader;
 import static org.springframework.http.HttpHeaders.ORIGIN;
 
 import cn.hutool.core.util.StrUtil;
@@ -257,7 +258,7 @@ public class HttpContextUtil {
         // get http body content
         StringBuilder buffer = new StringBuilder();
         String string;
-        while ((string = reader.readLine()) != null) {
+        while ((string = BoundedLineReader.readLine(reader, 5_000_000)) != null) {
             buffer.append(string);
         }
         reader.close();
