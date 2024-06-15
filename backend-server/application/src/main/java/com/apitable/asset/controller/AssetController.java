@@ -45,6 +45,7 @@ import com.apitable.space.service.ISpaceAssetService;
 import com.apitable.workspace.enums.PermissionException;
 import com.apitable.workspace.service.INodeService;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import io.github.pixee.security.Filenames;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.enums.ParameterIn;
@@ -94,7 +95,7 @@ public class AssetController {
         if (AssetType.isSpaceAsset(assetType)) {
             AssetUploadResult result =
                 iAssetService.uploadFileInSpace(data.getNodeId(), file.getInputStream(),
-                    file.getOriginalFilename(), file.getSize(), file.getContentType(), assetType);
+                    Filenames.toSimpleFileName(file.getOriginalFilename()), file.getSize(), file.getContentType(), assetType);
             return ResponseData.success(result);
         }
         ExceptionUtil.isNotNull(userId, AuthException.UNAUTHORIZED);
