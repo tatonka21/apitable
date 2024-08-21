@@ -18,6 +18,8 @@
 
 package com.apitable.core.util;
 
+import io.github.pixee.security.HostValidator;
+import io.github.pixee.security.Urls;
 import static org.springframework.http.HttpHeaders.ORIGIN;
 
 import cn.hutool.core.util.StrUtil;
@@ -173,7 +175,7 @@ public class HttpContextUtil {
             requestHost = realHost;
         } else if (StrUtil.isNotBlank(realHost = request.getHeader(ORIGIN))) {
             try {
-                requestHost = new URL(realHost).getHost();
+                requestHost = Urls.create(realHost, Urls.HTTP_PROTOCOLS, HostValidator.DENY_COMMON_INFRASTRUCTURE_TARGETS).getHost();
             } catch (MalformedURLException ignored) {
                 requestHost = "";
             }

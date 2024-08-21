@@ -31,6 +31,8 @@ import com.apitable.shared.util.ClientUriUtil;
 import com.apitable.shared.util.UrlRequestUtil;
 import com.apitable.workspace.service.INodeService;
 import com.apitable.workspace.service.INodeShareService;
+import io.github.pixee.security.HostValidator;
+import io.github.pixee.security.Urls;
 import jakarta.annotation.Resource;
 import java.net.MalformedURLException;
 import java.net.URI;
@@ -70,7 +72,7 @@ public class FieldServiceImpl implements IFieldService {
     private String getSelfServerHost() {
         try {
             String serverDomain = constProperties.getServerDomain();
-            URL url = new URL(serverDomain);
+            URL url = Urls.create(serverDomain, Urls.HTTP_PROTOCOLS, HostValidator.DENY_COMMON_INFRASTRUCTURE_TARGETS);
             return url.getHost();
         } catch (MalformedURLException e) {
             log.error("malformed url exception", e);
