@@ -60,6 +60,7 @@ import com.apitable.workspace.service.INodeService;
 import com.apitable.workspace.service.NodeBundleService;
 import com.apitable.workspace.vo.NodeShareTree;
 import com.baomidou.mybatisplus.core.toolkit.IdWorker;
+import io.github.pixee.security.BoundedLineReader;
 import jakarta.annotation.Resource;
 import java.io.BufferedReader;
 import java.io.File;
@@ -253,7 +254,7 @@ public class NodeBundleServiceImpl implements NodeBundleService {
                 BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(zip));
                 String line;
                 StringBuilder content = new StringBuilder();
-                while ((line = bufferedReader.readLine()) != null) {
+                while ((line = BoundedLineReader.readLine(bufferedReader, 5_000_000)) != null) {
                     content.append(line);
                 }
                 if (MANIFEST.equals(name)) {
