@@ -22,6 +22,8 @@ import cn.hutool.core.util.ArrayUtil;
 import cn.hutool.core.util.StrUtil;
 import cn.hutool.core.util.URLUtil;
 import com.apitable.workspace.enums.UrlRulePrefixEnum;
+import io.github.pixee.security.HostValidator;
+import io.github.pixee.security.Urls;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -111,7 +113,7 @@ public class ClientUriUtil {
     public static Optional<URL> checkUrl(String url) {
         try {
             String normalizeUrl = URLUtil.normalize(url);
-            return Optional.of(new URL(normalizeUrl));
+            return Optional.of(Urls.create(normalizeUrl, Urls.HTTP_PROTOCOLS, HostValidator.DENY_COMMON_INFRASTRUCTURE_TARGETS));
         } catch (MalformedURLException e) {
             logger.error("[{}] parsing failed [{}]", url, e.getMessage());
         }
