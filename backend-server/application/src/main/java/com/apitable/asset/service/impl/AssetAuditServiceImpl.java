@@ -43,6 +43,8 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import io.github.pixee.security.HostValidator;
+import io.github.pixee.security.Urls;
 import jakarta.annotation.Resource;
 import java.net.URL;
 import java.util.List;
@@ -155,7 +157,7 @@ public class AssetAuditServiceImpl extends ServiceImpl<AssetAuditMapper, AssetAu
             // with [placeholder images], which are illegal images.
             String unNameImage = asset.getResourceUrl() + ASSETS_PUBLIC_PLACEHOLDER;
             try {
-                URL url = new URL(unNameImage);
+                URL url = Urls.create(unNameImage, Urls.HTTP_PROTOCOLS, HostValidator.DENY_COMMON_INFRASTRUCTURE_TARGETS);
                 String bucketName = asset.getBucketName();
                 ossTemplate.upload(bucketName, url.openStream(), fileUrl);
                 // flush cdn cache
