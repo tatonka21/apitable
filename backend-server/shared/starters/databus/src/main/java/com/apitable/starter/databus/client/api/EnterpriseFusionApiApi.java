@@ -88,7 +88,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -152,7 +154,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -208,7 +212,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -272,7 +278,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -328,7 +336,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -384,7 +394,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -440,7 +452,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -496,7 +510,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -552,7 +568,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -624,7 +642,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -688,7 +708,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -752,7 +774,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -816,7 +840,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -880,7 +906,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -944,7 +972,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -1008,7 +1038,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -1072,7 +1104,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -1128,7 +1162,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -1192,7 +1228,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -1256,7 +1294,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -1320,7 +1360,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -1384,7 +1426,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -1448,7 +1492,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -1512,7 +1558,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -1576,7 +1624,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
@@ -1640,7 +1690,9 @@ public class EnterpriseFusionApiApi {
         final MultiValueMap<String, Object> localVarFormParams = new LinkedMultiValueMap<String, Object>();
 
         if (authorization != null)
-        localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        {
+            localVarHeaderParams.add("Authorization", apiClient.parameterToString(authorization));
+        }
 
         final String[] localVarAccepts = {  };
         final List<MediaType> localVarAccept = apiClient.selectHeaderAccept(localVarAccepts);
