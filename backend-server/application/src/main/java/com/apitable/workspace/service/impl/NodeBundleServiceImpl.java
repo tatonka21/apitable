@@ -60,6 +60,7 @@ import com.apitable.workspace.service.INodeService;
 import com.apitable.workspace.service.NodeBundleService;
 import com.apitable.workspace.vo.NodeShareTree;
 import com.baomidou.mybatisplus.core.toolkit.IdWorker;
+import io.github.pixee.security.ZipSecurity;
 import jakarta.annotation.Resource;
 import java.io.BufferedReader;
 import java.io.File;
@@ -246,7 +247,7 @@ public class NodeBundleServiceImpl implements NodeBundleService {
         String assetsContent = null;
         // get file
         Map<String, String> fileNameToContentMap = MapUtil.newHashMap();
-        try (ZipInputStream zip = new ZipInputStream(file.getInputStream())) {
+        try (ZipInputStream zip = ZipSecurity.createHardenedInputStream(file.getInputStream())) {
             ZipEntry entry;
             while ((entry = zip.getNextEntry()) != null) {
                 String name = entry.getName();
