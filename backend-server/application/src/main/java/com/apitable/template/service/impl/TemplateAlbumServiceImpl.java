@@ -30,6 +30,7 @@ import com.apitable.template.vo.AlbumContentVo;
 import com.apitable.template.vo.AlbumVo;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import jakarta.annotation.Resource;
+import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -83,7 +84,7 @@ public class TemplateAlbumServiceImpl extends ServiceImpl<TemplateAlbumMapper, T
             return this.getAlbumVosByAlbumIds(allAlbumIds);
         }
         Set<String> albumIds = new HashSet<>();
-        Random rand = new Random();
+        Random rand = new SecureRandom();
         for (int i = 0; i < maxCount; i++) {
             int randomIndex = rand.nextInt(allAlbumIds.size());
             albumIds.add(allAlbumIds.get(randomIndex));
