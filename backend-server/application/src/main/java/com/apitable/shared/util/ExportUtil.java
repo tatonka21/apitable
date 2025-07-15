@@ -19,6 +19,7 @@
 package com.apitable.shared.util;
 
 import com.apitable.core.util.HttpContextUtil;
+import io.github.pixee.security.Newlines;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.OutputStream;
@@ -49,7 +50,7 @@ public class ExportUtil {
                 if (contentType != null) {
                     response.setContentType(contentType);
                 }
-                response.setHeader("content-disposition", "attachment;filename=" + filename);
+                response.setHeader("content-disposition", Newlines.stripAll("attachment;filename=" + filename));
                 out = response.getOutputStream();
                 out.write(bytes);
             }

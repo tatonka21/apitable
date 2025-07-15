@@ -82,6 +82,7 @@ import com.apitable.space.vo.SpaceGlobalFeature;
 import com.apitable.user.mapper.UserMapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+import io.github.pixee.security.Newlines;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.Parameters;
@@ -470,7 +471,7 @@ public class MemberController {
             String fileName =
                 URLEncoder.encode(name, StandardCharsets.UTF_8).replaceAll("\\+", "%20");
             response.setHeader("Content-disposition",
-                "attachment;filename*=utf-8''" + fileName + ".xlsx");
+                Newlines.stripAll("attachment;filename*=utf-8''" + fileName + ".xlsx"));
             InputStream inputStream =
                 this.getClass().getResourceAsStream("/excel/contact_example.xlsx");
             OutputStream outputStream = response.getOutputStream();
